@@ -1,0 +1,52 @@
+.gamescreen-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5vw;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.gamescreen-container.ready {
+    background-color: green;
+}
+
+.gamescreen-container.tooSoon {
+    background-color: red;
+}
+
+.start-btn {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.2s;
+    width: 100%;
+    max-width: 300px;
+}
+
+.start-btn:hover {
+    background: #666;
+}
+
+@media (max-width: 600px) {
+    .gamescreen-container {
+        font-size: 5vw;
+        padding: 4vw;
+    }
+    .start-btn {
+        font-size: 1em;
+        padding: 0.8em 1.2em;
+        max-width: 90vw;
+    }
+}
