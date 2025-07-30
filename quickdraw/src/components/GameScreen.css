@@ -1,5 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .gamescreen-container {
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +23,7 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    padding: 2vw;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .gamescreen-container.ready {
@@ -44,6 +57,7 @@
         font-size: 5vw;
         padding: 4vw;
     }
+
     .start-btn {
         font-size: 1em;
         padding: 0.8em 1.2em;

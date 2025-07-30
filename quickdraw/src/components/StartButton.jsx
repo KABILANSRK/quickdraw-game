@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const StartButton = ({ btnType, onClick }) => {
+
+    const [circle, setCircle] = useState(null);
+
 
     return (
         <>
